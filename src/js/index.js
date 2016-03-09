@@ -1,2 +1,2 @@
 // Javascript Entry Point
-import items from ./items;
+import items from './items';
