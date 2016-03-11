@@ -1,5 +1,6 @@
 // Javascript Entry Point
 import items from './items';
+import $ from 'jquery';
 
 //did not inclue hover items in this declaration
 
@@ -30,58 +31,60 @@ import items from './items';
 //});
 
 //FIRST REAL ATTEMPT//
-var imgUrl = items.results[0].Images[0].url_170x135;
+var product = items.results;
 
-var itemName = items.results[0].Shop.title;
 
-var itemCurrency = items.results[0].Shop.currency_code;
+product.forEach(function(thing){
+	// console.log(thing);
+	var imgUrl = thing.Images[0].url_170x135;
+	
+	var itemName = thing.Shop.title;
 
-var itemStore = items.results[0].Shop.shop_name;
+	var itemCurrency = thing.Shop.currency_code;
 
-var itemPrice = items.results[0].price;
+	var itemStore = thing.Shop.shop_name;
 
-var itemHTML = `<div class="individual_item">
+	var itemPrice = thing.price;
+
+	var itemHTML = `<div class="individual_item">
   			<div class="photo">
   				<img src="${imgUrl}" alt="whiskey product"> 
   			</div>
-  			<div class="item_name"><${itemName}</div>
+  			<div class="item_name">${itemName}</div>
   			<div class="company">${itemStore}</div>
   			<div class="price">${itemPrice}</div><div class="currency">${itemCurrency}</div>
   			<div class="disappearing_img">
   			</div>
   		</div>`
 
-items.forEach(function(product){
 	$('main').append(itemHTML);
 });
 
 
 //SECOND REAL ATTEMPT
 
-var imgUrl = items.results[0].Images[0].url_170x135;
+// var imgUrl = items.results[0].Images[0].url_170x135;
 
-var itemName = items.results[0].Shop.title;
+// var itemName = items.results[0].Shop.title;
 
-var itemCurrency = items.results[0].Shop.currency_code;
+// var itemCurrency = items.results[0].Shop.currency_code;
 
-var itemStore = items.results[0].Shop.shop_name;
+// var itemStore = items.results[0].Shop.shop_name;
 
-var itemPrice = items.results[0].price;
+// var itemPrice = items.results[0].price;
 
-function makeBox(product) {
-	var itemHTML = `<div class="individual_item">
-  			<div class="photo">
-  				<img src="${imgUrl}" alt="whiskey product"> 
-  			</div>
-  			<div class="item_name"><${itemName}</div>
-  			<div class="company">${itemStore}</div>
-  			<div class="price">${itemPrice}</div><div class="currency">${itemCurrency}</div>
-  			<div class="disappearing_img">
-  			</div>
-  		</div>`
-}
-
-
+// function makeBox(product) {
+// 	var itemHTML = `<div class="individual_item">
+//   			<div class="photo">
+//   				<img src="${imgUrl}" alt="whiskey product"> 
+//   			</div>
+//   			<div class="item_name"><${itemName}</div>
+//   			<div class="company">${itemStore}</div>
+//   			<div class="price">${itemPrice}</div><div class="currency">${itemCurrency}</div>
+//   			<div class="disappearing_img">
+//   			</div>
+//   		</div>`
+// }
 
 
 
@@ -90,3 +93,6 @@ function makeBox(product) {
 
 
 
+
+
+// 

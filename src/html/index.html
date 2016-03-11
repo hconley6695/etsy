@@ -18,7 +18,7 @@
   			<a href="https://www.youtube.com/watch?v=ebQy8QDWjkE">Sell on Etsy</a>
   			<a href="https://www.youtube.com/watch?v=Q6TzAQXVpB8">Register</a>
   			<button>Sign In</button>
-  			<img src="assets/cart.png">
+  			<img src="src/cart.png">
   		</div>	
   		<div class="bottomheader">
   		  <nav>
@@ -40,7 +40,7 @@
   	<aside> 
   		<h4>Show results for:</h4>
   		<div class="box" id="topbox">
-  			<h4>All categories</h4>
+  			<span>All categories</span>
   				<ul class="categories">
   					<li><a href="https://www.cartoonstock.com/directory/l/living_away_from_home.asp">Home & Living</a></li>
   					<li><a href="https://en.wikipedia.org/wiki/Vincent_van_Gogh">Art & Collectibles</a></li>
@@ -59,17 +59,18 @@
   					<li>Pet Supplies</li>
   				</ul>	
   		</div>
-  			<h5>Refine your search</h5>
-  			<div class="box" id="bottombox">
+  			<h4>Refine your search</h4>
+  		<div class="box" id="bottombox">
   			<div class="sections">
   				<div class="item_type">
-  					<h5>Item Type</h5>
+  					<span>Item Type</span>
+  					<br>
   					<input type="radio" value="allItems" checked> All Items<br>
   					<input type="radio" value="handmade"> Handmade<br>
   					<input type="radio" value="Vintage"> Vintage<br>
   				</div>
   				<div class="price">
-  					<h5>Price($)</h5>
+  					<span>Price($)</span>
   					<br>
   					<input type="text" id="lowbtn">
   					<span>  to  </span>
@@ -77,7 +78,7 @@
   					<button class="narrowprice">NEED ARROW</button>
   				</div>
   				<div class="filterbycolor">
-  					<h5>Filter by Color</h5>
+  					<span>Filter by Color</span>
   					<ul class="colorblocks">
   						<li>RED #F40B32</li>
   						<li>ORANGE #F40B32</li>
@@ -91,17 +92,17 @@
   					</ul>
   				</div>
   				<div class="options">
-  					<h5>Ordering Options</h5>
+  					<span>Ordering Options</span>
   					  <input type="checkbox" name="option1" value="gift_cards"> Accepts Etsy gift cards<br>
  					  <input type="checkbox" name="option2" value="custom"> Customizable<br>
   				</div>
   				<div class="location">
-  					<h5>Shop location</h5>
+  					<span>Shop location</span>
   					<input type="radio" value="anywhere" checked> Anwywhere<br>
 					<input type="radio" value="united_states">United States<br>
 				</div>
 				<div class="ship">
-					<h5>Ship to</h5>
+					<span>Ship to</span>
 					<div class="dropmenu"><!-- could put drop down menu -->
 						<button>United States</button>
 					</div>
@@ -136,7 +137,7 @@
   				<li>cigar</li>
   				<li>whiskey barrel</li>
   				<li>jack daniels</li>
-				<li>beer</li>
+				  <li>beer</li>
   				<li>whiskey set</li>
   				<li>boyfriend gift</li>
   				<li>bourbon</li>
