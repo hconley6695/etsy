@@ -66,13 +66,14 @@ aside {
 	height: 405px;
 	width: 245px;
 	background-color: #ffffff;
-	border: .5px solid $grayColor;
+	border: 1px solid $grayColor;
 	padding-left: 10px;
 	li {
 		color: $blueColor;
 		padding-bottom: 8px;
 		font-size: 13px;
 		font-weight: lighter;
+		letter-spacing: .5px;
 	}
 	a {
 		color: $blueColor;
@@ -89,7 +90,21 @@ ul.categories {
 	width: 245px;
 	background-color: #ffffff;
 	border: .5px solid $grayColor;
+	.item_type {
+		color: $blueColor;
+		padding-bottom: 8px;
+		font-size: 13px;
+		font-weight: lighter;
+		letter-spacing: .5px;
+	}
+		h5 {
+			color: black;
+			letter-spacing: .5px;
+		}
+
 }
+
+
 
 main {
 	float: right;
