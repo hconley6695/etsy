@@ -2,6 +2,7 @@
 import items from './items';
 import $ from 'jquery';
 
+
 //did not inclue hover items in this declaration
 
 //var itemHTML = `
@@ -52,14 +53,17 @@ product.forEach(function(thing){
   			</div>
   			<div class="item_name">${itemName}</div>
   			<div class="company">${itemStore}</div>
-  			<div class="price">${itemPrice}</div><div class="currency">${itemCurrency}</div>
+  			<div class="price">${itemPrice}</div> " "<div class="currency">${itemCurrency}</div>
   			<div class="disappearing_img">
-  			</div>
+
+        </div>
   		</div>`
 
 	$('main').append(itemHTML);
 });
 
+   //     <img src="src/heart.png" alt="heart">
+ //         <img src="src/hamburger.png">      
 
 //SECOND REAL ATTEMPT
 

@@ -62,14 +62,16 @@
   			<h4>Refine your search</h4>
   		<div class="box" id="bottombox">
   			<div class="sections">
-  				<div class="item_type">
+  				
+          <div class="item_type">
   					<span>Item Type</span>
   					<br>
   					<input type="radio" value="allItems" checked> All Items<br>
   					<input type="radio" value="handmade"> Handmade<br>
   					<input type="radio" value="Vintage"> Vintage<br>
   				</div>
-  				<div class="price">
+  				
+          <div class="price">
   					<span>Price($)</span>
   					<br>
   					<input type="text" id="lowbtn">
@@ -77,35 +79,38 @@
   					<input type="text" id="highbtn">
   					<button class="narrowprice">NEED ARROW</button>
   				</div>
-  				<div class="filterbycolor">
+  				
+          <div class="filterbycolor">
   					<span>Filter by Color</span>
   					<ul class="colorblocks">
-  						<li>RED #F40B32</li>
-  						<li>ORANGE #F40B32</li>
-  						<li>YELLOW #F40B32</li>
-  						<li>GREEN #F40B32</li>
-						<li>SKY BLUE #F40B32</li>
-  						<li>PURPLE #A60CF3</li>
-  						<li>BLACK #A60CF3</li>
-  						<li>WHITE #A60CF3</li>
-  						<li>TESTING</li>
+  						<li></li>
+  						<li></li>
+  						<li></li>
+  						<li></li>
+						  <li></li>
+  						<li></li>
+  						<li></li>
+  						<li></li>
   					</ul>
   				</div>
-  				<div class="options">
+  				
+          <div class="options">
   					<span>Ordering Options</span>
   					  <input type="checkbox" name="option1" value="gift_cards"> Accepts Etsy gift cards<br>
  					  <input type="checkbox" name="option2" value="custom"> Customizable<br>
   				</div>
-  				<div class="location">
+  				
+          <div class="location">
   					<span>Shop location</span>
   					<input type="radio" value="anywhere" checked> Anwywhere<br>
 					<input type="radio" value="united_states">United States<br>
 				</div>
-				<div class="ship">
-					<span>Ship to</span>
-					<div class="dropmenu"><!-- could put drop down menu -->
-						<button>United States</button>
-					</div>
+				
+          <div class="ship">
+					 <span>Ship to</span>
+					   <div class="dropmenu"><!-- could put drop down menu -->
+						    <button>United States</button>
+					   </div>
  				 </div>		
   			</div>
 		</div>
@@ -114,19 +119,7 @@
   	
 
   	<main> 
-  		<div class="individual_item">
-  			<div class="photo">
-  				<img src="${items[0].image}" alt="whiskey product"> <!--NEED TO PULL IN IMG SRC FROM JQUERY -->
-  			</div>
-  			<div class="item_name"><!--${items[0].title} --></div>
-  			<div class="company"><!-- ${items[0].shop.shop_name} --></div> <!-- under shop, then shop_name -->
-  			<div class="price"><!--${items[0].price} --></div><div class="currency"><!-- ${items[0].currency_code} --></div>
-
-  			<div class="disappearing_img">
-  				<!--<img src="/assets/heart.png" id="heart">
-  				<img src="/assets/hamburger.png" id="hamburger"> -->
-  			</div>
-  		</div>
+  		
   	</main>
 
   	<footer>
