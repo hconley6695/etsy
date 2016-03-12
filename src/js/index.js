@@ -54,10 +54,12 @@ product.forEach(function(thing){
   			<div class="item_name">${itemName}</div>
   			<div class="company">${itemStore}</div>
   			<div class="price">${itemPrice}</div> " "<div class="currency">${itemCurrency}</div>
-  			<div class="disappearing_img">
-           <img src="assets/heart.png" alt="heart" height="20" width="20">
+          <div class="disappearing_img">  
             <img src="assets/hamburger.png" alt="hamburger" height="20" width="20">    
-        </div>
+          </div>    
+          <div class="disappearing_img2">
+            <img src="assets/heart.png" alt="heart" height="20" width="20">  
+          </div> 
   		</div>`
 
 	$('main').append(itemHTML);
