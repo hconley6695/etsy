@@ -49,21 +49,21 @@ product.forEach(function(thing){
 
 	var itemHTML = `<div class="individual_item">
   			<div class="photo">
-  				<img src="${imgUrl}" alt="whiskey product"> 
+  				<img src="${imgUrl}" alt="whiskey product" height="176" width="225"> 
   			</div>
   			<div class="item_name">${itemName}</div>
   			<div class="company">${itemStore}</div>
   			<div class="price">${itemPrice}</div> " "<div class="currency">${itemCurrency}</div>
   			<div class="disappearing_img">
-
+           <img src="assets/heart.png" alt="heart" height="20" width="20">
+            <img src="assets/hamburger.png" alt="hamburger" height="20" width="20">    
         </div>
   		</div>`
 
 	$('main').append(itemHTML);
 });
 
-   //     <img src="src/heart.png" alt="heart">
- //         <img src="src/hamburger.png">      
+       
 
 //SECOND REAL ATTEMPT
 

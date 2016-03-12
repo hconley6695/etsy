@@ -26,6 +26,11 @@ body {
 		font-size: 13px;
 		font-weight: bold;
 	}
+
+}
+.shopping_cart {
+		height: 10px;
+		width: 10px;
 }
 
 #searchbtn {
@@ -164,12 +169,15 @@ main {
 	float: right;
 	width: 725px;
 	border: 1px solid blue;
-	img {
-		height: 176px;
-		width: 225px;
+	.photo {
+//		height: 176px;
+//		width: 225px;
 		overflow: hidden;
 	}
-
+	.disappearing_img {
+		height: 20px;
+		width: 20px;
+	}
 
 }
 
@@ -193,6 +201,7 @@ main {
 	}
 	
 }
+
 
 footer {
 	float: right;
