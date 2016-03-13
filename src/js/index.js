@@ -39,7 +39,7 @@ product.forEach(function(thing){
 	// console.log(thing);
 	var imgUrl = thing.Images[0].url_170x135;
 	
-	var itemName = thing.Shop.title;
+	var itemName = thing.title;
 
 	var itemCurrency = thing.Shop.currency_code;
 
@@ -53,7 +53,8 @@ product.forEach(function(thing){
   			</div>
   			<div class="item_name">${itemName}</div>
   			<div class="company">${itemStore}</div>
-  			<div class="price">${itemPrice}</div> " "<div class="currency">${itemCurrency}</div>
+        <div class="currency"> ${itemCurrency}</div>
+  			<div class="price">$${itemPrice} </div>
           <div class="disappearing_img">  
             <img src="assets/hamburger.png" alt="hamburger" height="20" width="20">    
           </div>    
