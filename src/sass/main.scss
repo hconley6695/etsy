@@ -17,30 +17,80 @@ li {
 	list-style: none;
 }
 .topheader {
-	h2 {color: $blueColor; display: inline-block;}
-	button {
+	background-color: #ffffff;
+	position: relative;
+	display: block;
+	h1 {
+		color: #f56400; 
+		display: inline-block; 
+		font-family: serif; 
+		font-size: 26px;
+		margin-right: 20px;
+	}
+	.search {
 		background: #34a8c4;
 		color: white;
 		border: #34a8c4;
-		height: 40px;
+		height: 35px;
 		width: 80px;
 		padding: 0;
 		margin: 0;
 		font-size: 13px;
 		font-weight: bold;
+		margin-right: 0;
+	}
+	a {
+		color: $blueColor;
+		text-decoration: none;
+		margin-left: 20px;
+		font-size: 13px;
+		letter-spacing: .5px;
+	}
+	.sign_in {
+		background: #ffffff;
+		color: $blueColor;
+		font-size: 13px;
+		height: 35px;
+		width: 60px;
+		border: 1px solid $blueColor;
+		border-radius: 3px;
+		position: absolute;
+		top: 10px;
+		right: 80px;
+	}
+	span {
+		align-content: flex-end;
+		font-size: 11px;
+		vertical-align: bottom;
+		position: absolute;
+		bottom: 15px;
+		right: 20px;
+	}
+	#shopping_cart {
+		position: absolute;
+		top: 10px;
+		right: 20px;
 	}
 
+
 }
-.shopping_cart {
-		height: 10px;
-		width: 10px;
+
+#register {
+	position: absolute;
+	right: 160px;
+	top: 20px;
+}
+
+#sell {
+	position: absolute;
+	right: 230px;
+	top: 20px;
 }
 
 #searchbtn {
-	height: 35px;
+	height: 29px;
 	width: 250px;
-	padding-right: 0;
-	margin-right: 0;
+	margin: 0;
 }
 
 
@@ -114,35 +164,35 @@ ul.categories {
 	}
 }	
 	
-.colorblocks {
+.colorblocks li {
 	height: 20px;
 	width: 20px;
 	border: 2px solid red;
-		li:nth-child(1) {
-		background-color: #F40B32;
+	li:nth-child(1) {
+	background-color: #F40B32;
 		}
-		li:nth-child(2) {
+	li:nth-child(2) {
 		background-color: #Ff7f00;
 		}
-		li:nth-child(3) {
+	li:nth-child(3) {
 		background-color: #f3cc0c;
 		}
-		li:nth-child(4) {
+	li:nth-child(4) {
 		background-color: #0ac20a;
 		}
-		li:nth-child(5) {
+	li:nth-child(5) {
 		background-color: #0cccf3;
 		}
-		li:nth-child(6) {
+	li:nth-child(6) {
 		background-color: #a60cf3;
-		}
-		li:nth-child(7) {
+	}
+	li:nth-child(7) {
 		background-color: #000000;
 		}
-		li:nth-child(8) {
+	li:nth-child(8) {
 		background-color: #ffffff;
-		}	//		
-	//	}
+		}			
+	}
 
 .sections span {
 	padding-left: 20px;	
@@ -165,7 +215,7 @@ ul.categories {
 //.colorblocks {
 
 //	flex-direction: row;
-	}
+	
 
 
 
@@ -215,10 +265,9 @@ main {
 		right: 5px;
 		top: 5px;
 //		display: none;
-		}
-//	.disappearing_img:hover {
-//		z-index: 2;
-//		}	
+		&:hover {
+		display: inline-block;
+		}	}
 	.disappearing_img2 {
 		height: 20px;
 		width: 20px;
