@@ -418,7 +418,10 @@ footer {
 	color: $blueColor;
 	letter-spacing: .5px;
 	font-size: 13px;
-
+	a {
+		text-decoration: none;
+		color: $blueColor;
+	}
 	.column1 {
 		height: 100px;
 		width: 175px;
@@ -440,6 +443,9 @@ footer {
 		display: inline-block;
 		vertical-align: top;
 		padding-left: 10px;
+	}
+	p a{
+		text-decoration: underline;
 	}
 }	
 
